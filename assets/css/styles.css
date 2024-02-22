@@ -376,14 +376,40 @@ img {
 .home__img{
   width: 220px;
   transition: scale .4s;
+  margin-inline: auto;
 }
 
 .home__article{
-  scale:  .8;
+  scale: .8;
+ 
 }
 
 .swiper-slide-active,
 .swiper-slide-duplicate-active{
   scale: 1;
+} 
+
+.shadow-header{
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+}
+/*============== SERVICES ===========*/
+.services__container{
+  row-gap: 3rem;
+}
+
+.services__card{
+  text-align: center;
+}
+
+.services__card i{
+  display: block;
+  font-size: 3rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.services__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
 }
 

@@ -33,16 +33,16 @@ if(loginClose){
     })
 };
 
-// swiper home
+// swipeezz
 
 let swiperHome = new Swiper('.home__swiper', {
+    spaceBetween : -24,
     loop: true,
-    spaceBetween: -24,
-    grabCursor: true,
-    slidesPerView: 'auto', 
-    centeredSlides: "auto",
+    grabCursor : true,
+    slidesPerView:'auto',
+    centeredSlides: 'auto',
 
-    autoplay: {
+    autoplay:{
         delay:3000,
         disableOnInteraction: false,
 
@@ -53,4 +53,14 @@ let swiperHome = new Swiper('.home__swiper', {
             spaceBetween: -32,
         }
     }
-})
+  });
+
+
+  const shadowHeader = () => {
+    const header = document.getElementById('header')
+
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+                       : header.classList.remove('shadow-header')
+  }
+
+  window.addEventListener('scroll', shadowHeader)
