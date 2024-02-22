@@ -340,3 +340,50 @@ img {
 .show-login{
   top: 0;
 }
+
+/*========== HOME ==========*/
+
+.home__swiper{
+  margin: initial;
+}
+
+.home__container{
+  padding-top: 2rem;
+  row-gap: 2.5rem;
+}
+
+.home__data{
+  text-align: center;
+}
+
+.home__title{
+  font-size: var(--biggest-font-size);
+  margin-bottom: 1rem;
+}
+
+.home__description{
+  margin-bottom: 2rem;
+}
+
+.home__images{
+  display: grid;
+}
+
+.home__article{
+  width: 220px;
+  transition: scale .4s;
+}
+.home__img{
+  width: 220px;
+  transition: scale .4s;
+}
+
+.home__article{
+  scale:  .8;
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active{
+  scale: 1;
+}
+

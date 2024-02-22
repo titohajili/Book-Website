@@ -11,6 +11,9 @@
 
       <link rel="stylesheet" href="assets/css/styles.css">
 
+      <!-- swiper -->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
       <title>Book Website</title>
    </head>
    <body>
@@ -120,8 +123,56 @@
       </div>
       <!--=========== MAIN ======================-->
 
-      
+      <main class="main">
 
+         <!--============== HOME =============-->
+
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <h1 class="home__title">
+                     Select E-Books
+                  </h1>
+
+                  <p class="home__description">
+                     Find the best e-books from your favorite 
+                     possible categories, take advantage of the 
+                     writers, explore hundreds of books with all 
+                     50% discount and much more. 
+                  </p>
+
+                  <a href="#" class="button">Explore Now</a>
+               </div>
+
+               <div class="home__images">
+                  <div class="home__swiper swiper">
+                     <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/home-book-1.png" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/home-book-2.png" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/home-book-3.png" alt="image" class="home__img">
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                           <img src="assets/img/home-book-4.png" alt="image" class="home__img">
+                        </article>
+
+                     </div>
+
+
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!--=============== SWIPER ================-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
    </body>
