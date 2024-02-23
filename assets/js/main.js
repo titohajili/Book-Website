@@ -104,3 +104,21 @@ let swiperFeatured = new Swiper('.featured__swiper', {
         }
     }
   });
+
+  //==========testimonial======
+
+   
+let swiperTestimonial = new Swiper('.testimonial__swiper', {
+    spaceBetween : 16,
+    loop: true,
+    grabCursor : true,
+    slidesPerView:'auto',
+    centeredSlides: 'auto',
+
+    breakpoints: {
+        1150: {
+           slidesPerView: 3,
+           centeredSlides: false,
+        }
+    }
+  });

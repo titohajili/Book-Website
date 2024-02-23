@@ -632,3 +632,34 @@ img {
   padding-block: 1.25rem;
   cursor: pointer;
 }
+
+/*======= TESTIMONIAL ==========*/
+
+.testimonial__card{
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 2rem 3rem 2.5rem;
+  border: 2px solid var(--border-color);
+  transition: border .4s , background-color .4s;
+}
+
+.testimonial__img{
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.testimonial__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: .75rem;
+}
+
+.testimonial__description{
+  font-size: var(--small-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.testimonial__stars{
+  color:  var(--first-color);
+}
+
