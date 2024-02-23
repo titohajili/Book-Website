@@ -586,3 +586,49 @@ img {
 .new__swiper:nth-child(1){
   margin-bottom: 2rem;
 }
+
+/*======= JOIN ========*/
+
+.join{
+  position: relative;
+  padding-block: 3rem;
+}
+
+.join__bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  gap: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.join__data{
+  position: relative;
+}
+
+.join__title{
+  color: var(--white-color);
+}
+
+.join__form{
+  display: grid;
+  row-gap: 1rem;
+}
+
+.join__input{
+  padding: 1.25rem 1rem;
+  background-color: var(--body-color);
+  color: var(--title-color);
+  transition: background-color .4s;
+}
+
+.join__input::placeholder{
+  color: var(--text-color);
+}
+
+.join__button{
+  padding-block: 1.25rem;
+  cursor: pointer;
+}
