@@ -63,4 +63,30 @@ let swiperHome = new Swiper('.home__swiper', {
                        : header.classList.remove('shadow-header')
   }
 
-  window.addEventListener('scroll', shadowHeader)
+  window.addEventListener('scroll', shadowHeader);
+
+
+
+  //================== FEATURED SWIPER ==============
+
+  
+let swiperFeatured = new Swiper('.featured__swiper', {
+    spaceBetween : 16,
+    loop: true,
+    grabCursor : true,
+    slidesPerView:'auto',
+    centeredSlides: 'auto',
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      
+    breakpoints: {
+        1150: {
+           slidesPerView: 4,
+           centeredSlides: false,
+        }
+    }
+  });
+
