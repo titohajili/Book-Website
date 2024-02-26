@@ -84,7 +84,7 @@ let swiperFeatured = new Swiper('.featured__swiper', {
 
     breakpoints: {
         1150: {
-           slidesPerView: 4,
+           slidesPerView: 3,
            centeredSlides: false,
         }
     }
