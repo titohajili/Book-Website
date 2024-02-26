@@ -192,6 +192,13 @@ img {
 .nav__actions i:hover{
   color: var(--first-color);
 }
+/*========Active Link ======== */
+
+.active-link{
+  color: var(--first-color);
+}
+
+
 
 /*======== SEARCH ========= */
 
@@ -735,4 +742,43 @@ img {
 
 
 
+/*========= SCROLL BAR =========*/
 
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsla(230, 16%, 85%);
+}
+
+
+::-webkit-scrollbar-thumb{
+
+  border-radius: .5rem;
+  background-color: hsla(230, 16%, 65%);
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsla(230, 16%, 55%);
+}
+
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--container-color);
+  box-shadow: 0 2px 8px hsla(0, 0%, 0%, .1);
+  display: inline-flex;
+  padding: 6px;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  z-index: var(--z-tooltip);
+  transition: bottom .4s ,transform .4s , background-color .4s;
+}
+.scrollup:hover{
+  transform: translateY(-.5rem);
+}
+
+.show-scroll{
+  bottom: 6rem;
+}
